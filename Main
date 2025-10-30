@@ -1,0 +1,31 @@
+package DoublyLinkedList;
+
+public class Main {
+    public static void main(String[] args) {
+
+        DoublyLinkedList list = new DoublyLinkedList();
+
+        list.addFirst(30);
+        list.addFirst(20);
+        list.addFirst(10);
+        list.addLast(40);
+        list.add(2,25);
+
+        System.out.print("index #3: " + list.get(3));
+        System.out.println();
+        System.out.print(list.printList());
+        System.out.println();
+
+        list.deleteFirst();
+        list.deletelast();
+        list.delete(1);
+        System.out.print(list.printList());
+        System.out.println();
+        System.out.println("List size: " + list.getSize());
+    }
+}
+// REFERENCES
+// https://www.softwaretestinghelp.com/doubly-linked-list-in-java/
+// https://www.tutorialspoint.com/java_data_structures/java_data_structures_doubly_linked_lists.htm
+// https://www.geeksforgeeks.org/dsa/introduction-to-doubly-linked-lists-in-java/
+// Canvas Singly Linked List source code
